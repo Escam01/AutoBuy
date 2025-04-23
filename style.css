@@ -1,0 +1,299 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: dimgray;
+    color: white;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2f2f2f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .menu-left {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-center {
+    display: flex;
+    gap: 30px;
+  }
+
+  .menu-center a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  .menu-center a:hover {
+    color: #4caf50;
+  }
+
+  .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Стили для страницы авторизации */
+  .auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+  }
+
+  .form input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 150px;
+  }
+
+  .social-buttons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    transition: transform 0.3s;
+  }
+
+  .social-buttons img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Стили для каталога */
+  .catalog-container {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .search-box {
+    margin-bottom: 30px;
+  }
+
+  .search-box input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: left;
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .card h3 {
+    margin: 10px 0 5px;
+  }
+
+  .card p {
+    margin: 0 0 10px;
+    color: gray;
+  }
+
+  .card .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card a {
+    margin-right: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  /* Стили для корзины */
+  .cart-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #3e3e3e;
+    border-radius: 10px;
+  }
+
+  .cart-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #555;
+    border-radius: 8px;
+  }
+
+  .cart-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .item-details {
+    flex-grow: 1;
+    padding: 0 20px;
+  }
+
+  .item-details h3 {
+    margin: 0 0 10px;
+  }
+
+  .remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .remove-button:hover {
+    background-color: #ff1a1a;
+  }
+
+  .checkout {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  .checkout button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .checkout button:hover {
+    background-color: #3e8e41;
+  }
+
+  .total {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  /* Стили для страницы "О нас" */
+  .about-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #3e3e3e;
+    border-radius: 10px;
+  }
+
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-section {
+    margin-bottom: 30px;
+  }
+
+  .about-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4caf50;
+  }
+
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .contact-info {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .contact-info a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  /* Скрытие неактивных разделов */
+  .page-section {
+    display: none;
+  }
+
+  .active-page {
+    display: block;
+  }

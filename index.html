@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoBuy - Автомобильный маркетплейс</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-left">&#9776;</div>
+    <div class="menu-center">
+      <a href="#" onclick="showPage('home')">Главная</a>
+      <a href="#" onclick="showPage('catalog')">Каталог</a>
+      <a href="#" onclick="showPage('delivery')">Условия доставки</a>
+      <a href="#" onclick="showPage('about')">О нас</a>
+    </div>
+    <div class="cart-icon" onclick="showPage('cart')">🛒</div>
+  </header>
+
+  <!-- Страница авторизации -->
+  <div id="home" class="page-section active-page">
+    <div class="auth-container">
+      <div class="title">AutoBuy</div>
+      <div class="form">
+        <input type="text" placeholder="Логин" />
+        <input type="password" placeholder="Пароль" />
+      </div>
+      <div class="social-buttons">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" alt="VK" title="ВКонтакте" />
+        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" title="Google" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Страница каталога -->
+  <div id="catalog" class="page-section">
+    <div class="catalog-container">
+      <div class="search-box">
+        <input type="text" placeholder="Найти модель" />
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/car-1957037_960_720.jpg" alt="Tesla Model S" />
+          <h3>Model S</h3>
+          <p>Tesla</p>
+          <div class="price">6 500 000 ₽</div>
+          <a href="#">Подробнее</a>
+          <a href="#">Добавить в корзину</a>
+        </div>
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2020/05/22/17/27/toyota-5208360_960_720.jpg" alt="Toyota Camry" />
+          <h3>Camry</h3>
+          <p>Toyota</p>
+          <div class="price">3 200 000 ₽</div>
+          <a href="#">Подробнее</a>
+          <a href="#">Добавить в корзину</a>
+        </div>
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2020/10/14/18/17/audi-5654464_960_720.jpg" alt="Audi Q7" />
+          <h3>Q7</h3>
+          <p>Audi</p>
+          <div class="price">7 800 000 ₽</div>
+          <a href="#">Подробнее</a>
+          <a href="#">Добавить в корзину</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Страница корзины -->
+  <div id="cart" class="page-section">
+    <div class="cart-container">
+      <div class="cart-title">Ваша корзина</div>
+      <div class="cart-item">
+        <img src="https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_960_720.jpg" alt="BMW X5" />
+        <div class="item-details">
+          <h3>BMW X5</h3>
+          <p>Цена: 2 500 000 ₽</p>
+        </div>
+        <button class="remove-button">Удалить</button>
+      </div>
+      <div class="cart-item">
+        <img src="https://cdn.pixabay.com/photo/2015/03/28/20/45/audi-695733_960_720.jpg" alt="Audi Q7" />
+        <div class="item-details">
+          <h3>Audi Q7</h3>
+          <p>Цена: 3 000 000 ₽</p>
+        </div>
+        <button class="remove-button">Удалить</button>
+      </div>
+      <div class="total">
+        <p>Итоговая сумма: 5 500 000 ₽</p>
+      </div>
+      <div class="checkout">
+        <button>Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Страница "О нас" -->
+  <div id="about" class="page-section">
+    <div class="about-container">
+      <div class="about-title">О нас</div>
+      <div class="about-section">
+        <h2>Наша миссия</h2>
+        <p>Компания AutoBuy стремится предоставить нашим клиентам лучшие автомобили по доступным ценам. Мы предлагаем широкий выбор автомобилей, от роскошных седанов до внедорожников, удовлетворяя потребности каждого покупателя.</p>
+      </div>
+      <div class="about-section">
+        <h2>Почему выбирают нас?</h2>
+        <p>Мы гарантируем качество каждого автомобиля, предлагаем отличные условия по кредитованию и доставке, а также индивидуальный подход к каждому клиенту. Мы уверены, что покупка автомобиля с нами — это лучший выбор для вашего комфорта и безопасности на дорогах.</p>
+      </div>
+      <div class="contact-info">
+        <h2>Контактная информация</h2>
+        <p>Наши офисы расположены по всей России. Для получения дополнительной информации или консультации, свяжитесь с нами:</p>
+        <p>Email: <a href="mailto:info@autobuy.com">info@autobuy.com</a></p>
+        <p>Телефон: +7 (800) 555-35-35</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Страница "Условия доставки" -->
+  <div id="delivery" class="page-section">
+    <div class="about-container">
+      <div class="about-title">Условия доставки</div>
+      <div class="about-section">
+        <h2>Доставка по России</h2>
+        <p>Мы осуществляем доставку автомобилей в любой регион России. Срок доставки составляет от 3 до 14 рабочих дней в зависимости от удаленности региона.</p>
+        <p>Стоимость доставки рассчитывается индивидуально и зависит от расстояния и выбранного способа транспортировки.</p>
+      </div>
+      <div class="about-section">
+        <h2>Самовывоз</h2>
+        <p>Вы можете забрать автомобиль самостоятельно с нашего склада в Москве по адресу: ул. Автозаводская, д. 23.</p>
+        <p>Перед самовывозом необходимо согласовать время и дату с нашим менеджером.</p>
+      </div>
+      <div class="about-section">
+        <h2>Гарантии</h2>
+        <p>Все автомобили проходят предпродажную подготовку и проверку. Мы предоставляем гарантию 1 год на все автомобили из нашего каталога.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
